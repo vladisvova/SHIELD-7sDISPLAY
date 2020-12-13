@@ -709,3 +709,29 @@ void nine(bool activeDP){
 		LL_GPIO_SetOutputPin(segment_DP_GPIO_Port, segment_DP_Pin);
 
 }
+
+
+void zero(bool activeDP){
+
+	LL_GPIO_SetOutputPin(segment_A_GPIO_Port, segment_A_Pin);
+	LL_GPIO_SetOutputPin(segment_B_GPIO_Port, segment_B_Pin);
+	LL_GPIO_SetOutputPin(segment_C_GPIO_Port, segment_C_Pin);
+	LL_GPIO_SetOutputPin(segment_D_GPIO_Port, segment_D_Pin);
+	LL_GPIO_SetOutputPin(segment_E_GPIO_Port, segment_E_Pin);
+	LL_GPIO_SetOutputPin(segment_F_GPIO_Port, segment_F_Pin);
+	LL_GPIO_SetOutputPin(segment_G_GPIO_Port, segment_G_Pin);
+
+	LL_GPIO_ResetOutputPin(segment_A_GPIO_Port, segment_A_Pin);
+	LL_GPIO_ResetOutputPin(segment_B_GPIO_Port, segment_B_Pin);
+	LL_GPIO_ResetOutputPin(segment_C_GPIO_Port, segment_C_Pin);
+	LL_GPIO_ResetOutputPin(segment_D_GPIO_Port, segment_D_Pin);
+	LL_GPIO_ResetOutputPin(segment_E_GPIO_Port, segment_E_Pin);
+	LL_GPIO_ResetOutputPin(segment_F_GPIO_Port, segment_F_Pin);
+	//LL_GPIO_ResetOutputPin(segment_G_GPIO_Port, segment_G_Pin);
+
+	if(activeDP)
+		LL_GPIO_ResetOutputPin(segment_DP_GPIO_Port, segment_DP_Pin);
+	else
+		LL_GPIO_SetOutputPin(segment_DP_GPIO_Port, segment_DP_Pin);
+
+}

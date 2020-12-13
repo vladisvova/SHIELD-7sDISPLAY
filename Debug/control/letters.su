@@ -27,3 +27,4 @@ letters.c:610:6:two	16	static
 letters.c:635:6:five	16	static
 letters.c:661:6:seven	16	static
 letters.c:688:6:nine	16	static
+letters.c:714:6:zero	16	static

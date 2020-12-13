@@ -390,6 +390,8 @@ void lightTheChar(uint8_t ch, bool active_DP){
 	if(ch =='9')
 		nine(active_DP);
 
+	if(ch =='0')
+		zero(active_DP);
 
 
 }

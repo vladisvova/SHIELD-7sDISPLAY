@@ -49,3 +49,4 @@ void seven(bool activeDP);
 void five(bool activeDP);
 void three(bool activeDP);
 void one(bool activeDP);
+void zero(bool activeDP);
