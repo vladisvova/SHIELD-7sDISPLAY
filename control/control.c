@@ -72,14 +72,14 @@ void processToDisplay(void){
 		if(button_state == ALT){
 
 			size_t needed = snprintf(NULL, 0, "ALT_%4.2f",LBS25HB_calculate_altitude(LBS25HB_get_pres()));
-			text = (char*)malloc((needed+1)*sizeof(char));
+			text = (char*)realloc(text,needed+1);
 			sprintf(text, "ALT_%4.2f",LBS25HB_calculate_altitude(LBS25HB_get_pres()));
 			len = needed+1;
 
 		} else if(button_state == BAR){
 
 			size_t needed = snprintf(NULL, 0, "BAR_%4.2f",LBS25HB_get_pres());
-			text = (char*)malloc((needed+1)*sizeof(char));
+			text = (char*)realloc(text,needed+1);
 			sprintf(text, "BAR_%4.2f",LBS25HB_get_pres());
 			len = needed+1;
 
@@ -87,7 +87,7 @@ void processToDisplay(void){
 
 
 			size_t needed = snprintf(NULL, 0, "TEMP_%2.1f",HTS221_get_temp());
-			text = (char*)malloc((needed+1)*sizeof(char));
+			text = (char*)realloc(text,needed+1);
 			sprintf(text, "TEMP_%2.1f",HTS221_get_temp());
 			len = needed+1;
 
@@ -95,14 +95,14 @@ void processToDisplay(void){
 
 
 			size_t needed = snprintf(NULL, 0, "HUM_%2d",HTS221_get_relhum());
-			text = (char*)malloc((needed+1)*sizeof(char));
+			text = (char*)realloc(text,needed+1);
 			sprintf(text, "HUM_%2d",HTS221_get_relhum());
 			len = needed+1;
 
 		}else if(button_state == MAG){
 
 			size_t needed = snprintf(NULL, 0, "MAG_%2.2f",lis3mdl_get_azimut());
-			text = (char*)malloc((needed+1)*sizeof(char));
+			text = (char*)realloc(text,needed+1);
 			sprintf(text, "MAG_%2.2f",lis3mdl_get_azimut());
 			len = needed+1;
 

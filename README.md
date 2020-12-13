@@ -1,5 +1,0 @@
-# SHIELD-7sDISPLAY
-
-- Starting with AZIMUT
-- Change state with pushing button 
-- AZIMUTH->TEMPERATURE->HUMUDITY->PRESSURE->ALTITUDE->AZIMUTH
