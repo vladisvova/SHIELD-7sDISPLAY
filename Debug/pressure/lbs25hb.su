@@ -1,0 +1,6 @@
+lbs25hb.c:15:9:LBS25HB_read_byte	32	static
+lbs25hb.c:22:6:LBS25HB_write_byte	16	static
+lbs25hb.c:28:6:LBS25HB_readArray	24	static
+lbs25hb.c:34:9:LBS25HB_init	16	static
+lbs25hb.c:76:7:LBS25HB_get_pres	16	static
+lbs25hb.c:95:7:LBS25HB_calculate_altitude	24	static

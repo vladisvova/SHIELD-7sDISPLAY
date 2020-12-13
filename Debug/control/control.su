@@ -1,0 +1,5 @@
+stm32f3xx_ll_gpio.h:879:22:LL_GPIO_SetOutputPin	16	static
+control.c:17:9:state_init	4	static
+control.c:25:6:change_state	4	static
+control.c:45:6:processToDisplay	64	static
+control.c:307:6:lightTheChar	16	static
